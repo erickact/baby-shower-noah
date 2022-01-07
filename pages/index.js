@@ -37,7 +37,7 @@ const Home = () => {
             <CurvedText>BABY SHOWER</CurvedText>
           </Container>
           <Container>
-            <div className="-mt-10 sm:mt-0">
+            <div className="-mt-12 sm:mt-0">
               <img
                 src="/bear.png"
                 alt="babyBear"
@@ -83,6 +83,8 @@ const Home = () => {
 
               <div className="py-2 text-gray-500 font-body text-sm">
                 <p>JR PEDRO CONDE 178 - LINCE</p>
+
+                <p className="font-bold">*Confirmar asistencia*</p>
               </div>
             </div>
           </Container>
