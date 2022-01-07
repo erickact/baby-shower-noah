@@ -46,9 +46,9 @@ const Home = () => {
                 Noah Reymundo
               </h1>
               <div className="flex items-center justify-around py-2 font-body border-y-2 border-primary border-opacity-40">
-                <div className="min-w-[8rem]">
-                  <h3>S Á B A D O</h3>
-                  <h4 className="text-5xl text-primary">ENE</h4>
+                <div className="min-w-[5rem] sm:min-w-[8rem]">
+                  <h3 className="text-xs sm:text-md">S Á B A D O</h3>
+                  <h4 className="text-3xl sm:text-5xl text-primary">ENE</h4>
                 </div>
 
                 <div>
@@ -66,8 +66,8 @@ const Home = () => {
                   <HeartIcon className="w-6 text-primary rotate-[45deg]" />
                 </div>
 
-                <div className="min-w-[8rem]">
-                  <h2 className="text-6xl text-quaternary ">15</h2>
+                <div className="min-w-[5rem] sm:min-w-[8rem]">
+                  <h2 className="text-4xl sm:text-6xl text-quaternary ">15</h2>
                   <span>5.30 PM</span>
                 </div>
               </div>

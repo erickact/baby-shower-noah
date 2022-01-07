@@ -9,15 +9,16 @@ const CurvedText = ({ children }) => {
     circleTypeRef.current = new CircleType(
       document.getElementById("text")
     ).radius(350);
+
     return () => {
-      circleType.current.destroy();
+      circleTypeRef?.current?.destroy();
     };
   }, []);
 
   return (
     <div className="flex justify-between">
       <HeartIcon className="w-6 text-primary rotate-[-45deg] sm:translate-y-0 -translate-y-2" />
-      <div id="text" className="text-3xl font-bold sm:text-5xl text-primary">
+      <div id="text" className="text-3xl font-bold sm:text-6xl text-primary">
         {children}
       </div>
       <HeartIcon className="w-6 text-primary rotate-[45deg] sm:translate-y-0 -translate-y-2" />
