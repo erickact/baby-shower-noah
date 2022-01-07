@@ -1,15 +1,16 @@
 import React from "react";
 import { GiftIcon, CashIcon, HeartIcon } from "@heroicons/react/solid";
+import CopyToClipboard from "./CopyToClipboard";
 
 const options = [
   {
-    title: "Baby Infanti - Lista de deseos",
+    title: "Baby Infanti",
     icon: <GiftIcon className="w-8 h-8" />,
     description: (
       <>
         <ul className="list-disc">
           <li>
-            Nuestro código de lista de bebé es:{" "}
+            Nuestro código de lista de regalos es:{" "}
             <span className="font-bold">BIS4678842001</span>
           </li>
           <li>
@@ -46,10 +47,22 @@ const options = [
         Si prefieres delegarnos la responsabilidad de elegir el presente, te
         ayudamos con unos números de cuenta (titular: Paúl Díaz):{" "}
         <div className="my-2">
-          BCP: <p>19333679668064</p> <p>00219313367966806410</p>
+          BCP:{" "}
+          <p>
+            19333679668064 <CopyToClipboard text="19333679668064" />
+          </p>{" "}
+          <p>
+            00219313367966806410 <CopyToClipboard text="00219313367966806410" />
+          </p>
         </div>
         <div>
-          Interbank: <p>8213212252440</p> <p>00382101321225244069</p>
+          Interbank:{" "}
+          <p>
+            8213212252440 <CopyToClipboard text="8213212252440" />
+          </p>{" "}
+          <p>
+            00382101321225244069 <CopyToClipboard text="00382101321225244069" />
+          </p>
         </div>
       </>
     ),

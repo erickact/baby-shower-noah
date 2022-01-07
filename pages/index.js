@@ -72,7 +72,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="py-2 text-gray-500 font-body">
+              <div className="py-2 text-gray-500 font-body text-sm">
                 <p>JR PEDRO CONDE 178 - LINCE</p>
               </div>
             </div>
