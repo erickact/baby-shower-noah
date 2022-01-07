@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Container from "../components/Container";
 import CurvedText from "../components/CurvedText";
 import Hearts from "../components/Hearts";
-import Image from "next/image";
 import Head from "next/head";
 import { HeartIcon } from "@heroicons/react/solid";
 import Suggestions from "../components/Suggestions";
@@ -32,13 +31,13 @@ const Home = () => {
         <meta property="og:image" content="/social.png" />
         <meta property="og:title" content="Baby Shower - Noah Reymundo" />
       </Head>
-      <div className=" bg-gray-50">
+      <div className=" bg-gray-50 overflow-x-hidden">
         <div className="py-8">
           <Container>
             <CurvedText>BABY SHOWER</CurvedText>
           </Container>
           <Container>
-            <div>
+            <div className="-mt-10 sm:mt-0">
               <img
                 src="/bear.png"
                 alt="babyBear"
