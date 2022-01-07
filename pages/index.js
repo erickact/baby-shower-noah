@@ -37,7 +37,7 @@ const Home = () => {
             <CurvedText>BABY SHOWER</CurvedText>
           </Container>
           <Container>
-            <div className="-mt-12 sm:mt-0">
+            <div className="-mt-16 sm:mt-0">
               <img
                 src="/bear.png"
                 alt="babyBear"
