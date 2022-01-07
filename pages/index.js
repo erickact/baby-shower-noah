@@ -32,7 +32,7 @@ const Home = () => {
         <meta property="og:image" content="/social.png" />
         <meta property="og:title" content="Baby Shower - Noah Reymundo" />
       </Head>
-      <div className="min-h-screen bg-gray-50">
+      <div className=" bg-gray-50">
         <div className="py-8">
           <Container>
             <CurvedText>BABY SHOWER</CurvedText>
@@ -89,7 +89,7 @@ const Home = () => {
           </Container>
         </div>
       </div>
-      <div className="min-h-screen bg-blue-50">
+      <div className=" bg-blue-50">
         <div className="py-8">
           <Container>
             <p className="max-w-sm mx-auto mb-8 text-xl text-center text-gray-600 font-body">
