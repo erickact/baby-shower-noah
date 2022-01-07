@@ -23,9 +23,9 @@ const Hearts = () => {
           const randomColor = getRandomNumber(0, colors.length - 1);
           const randomSize = getRandomNumber(0, sizes.length - 1);
           const randomTop = getRandomNumber(0, 100);
-          const randomLeft = getRandomNumber(0, 100);
+          const randomLeft = getRandomNumber(0, 90);
           const iconClasses = clsx(
-            "drop-shadow-md absolute",
+            "drop-shadow-md absolute move",
             sizes[randomSize],
             colors[randomColor]
           );

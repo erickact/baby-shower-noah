@@ -9,11 +9,11 @@ const CurvedText = ({ children }) => {
   }, []);
   return (
     <div className="flex justify-between">
-      <HeartIcon className="w-6 text-primary rotate-[-45deg]" />
-      <div id="text" className="text-5xl text-primary font-bold">
+      <HeartIcon className="w-6 text-primary rotate-[-45deg] sm:translate-y-0 -translate-y-2" />
+      <div id="text" className="text-3xl sm:text-5xl text-primary font-bold">
         {children}
       </div>
-      <HeartIcon className="w-6 text-primary rotate-[45deg]" />
+      <HeartIcon className="w-6 text-primary rotate-[45deg] sm:translate-y-0 -translate-y-2" />
     </div>
   );
 };
