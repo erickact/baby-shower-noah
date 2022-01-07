@@ -1,16 +1,23 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import CircleType from "circletype";
 import { HeartIcon } from "@heroicons/react/solid";
 
 const CurvedText = ({ children }) => {
+  const circleTypeRef = useRef();
+
   useEffect(() => {
-    new CircleType(document.getElementById("text")).radius(384);
-    return () => {};
+    circleTypeRef.current = new CircleType(
+      document.getElementById("text")
+    ).radius(350);
+    return () => {
+      circleType.current.destroy();
+    };
   }, []);
+
   return (
     <div className="flex justify-between">
       <HeartIcon className="w-6 text-primary rotate-[-45deg] sm:translate-y-0 -translate-y-2" />
-      <div id="text" className="text-3xl sm:text-5xl text-primary font-bold">
+      <div id="text" className="text-3xl font-bold sm:text-5xl text-primary">
         {children}
       </div>
       <HeartIcon className="w-6 text-primary rotate-[45deg] sm:translate-y-0 -translate-y-2" />
