@@ -22,11 +22,11 @@ const Home = () => {
         <title>Baby Shower - Noah Reymundo</title>
         <meta
           name="description"
-          content="Acompáñanos a celebrar el baby shower de Noah Reymundo (15/01/2022)"
+          content="Acompáñanos a celebrar el baby shower de Noah Reymundo (22/01/2022)"
         />
         <meta
           property="og:description"
-          content="Acompáñanos a celebrar el baby shower de Noah Reymundo (15/01/2022)"
+          content="Acompáñanos a celebrar el baby shower de Noah Reymundo (22/01/2022)"
         />
         <meta property="og:image" content="/social.png" />
         <meta property="og:title" content="Baby Shower - Noah Reymundo" />
@@ -76,7 +76,7 @@ const Home = () => {
                 </div>
 
                 <div className="min-w-[5rem] sm:min-w-[8rem]">
-                  <h2 className="text-4xl sm:text-6xl text-quaternary ">15</h2>
+                  <h2 className="text-4xl sm:text-6xl text-quaternary ">22</h2>
                   <span>5.30 PM</span>
                 </div>
               </div>
