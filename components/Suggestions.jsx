@@ -7,14 +7,43 @@ const options = [
     icon: <GiftIcon className="w-8 h-8" />,
     description: (
       <>
-        <ul className="list-disc">
+        <ul className="space-y-2 list-disc">
           <li>
-            Nuestro código de lista de bebé es:{" "}
-            <span className="font-bold">BIS4678842001</span>
+            Entra a{" "}
+            <a
+              href="http://www.listabebes.comexa.com.pe/publico/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              http://www.listabebes.comexa.com.pe/publico/
+            </a>
           </li>
           <li>
-            Para comprar tu regalo por la página web, puedes seguir este
-            tutorial:{" "}
+            Ingresa nuestro código de lista de bebé:{" "}
+            <span className="italic font-bold">BIS4678842001</span>
+          </li>
+          <li>
+            Encontrarás la lista de sugerencias que hemos creado, escoge el
+            presente que más te guste y búscalo en la página:{" "}
+            <a
+              href="https://www.babyinfanti.com.pe/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              https://www.babyinfanti.com.pe/
+            </a>
+          </li>
+          <li>
+            En el proceso de compra (checkout) encontrarás un campo que dice:{" "}
+            <span className="italic font-bold">
+              ¿Su compra es parte de una lista de bebé?
+            </span>
+            , dale <span className="italic font-bold">Si</span> e ingresa
+            nuestro código de lista de bebé.
+          </li>
+          <li>
+            Si aún tienes dudas sobre el proceso de compra con código de lista
+            de bebé, puedes seguir este tutorial:{" "}
             <a
               href="https://www.facebook.com/babyinfantistoreperu/videos/3214000872062768/"
               target="_blank"
@@ -72,13 +101,15 @@ const Suggestions = () => {
       {options.map((option) => {
         return (
           <div
-            className="flex bg-white pl-3 pr-12 py-4 rounded-md shadow-md"
+            className="flex py-4 pl-3 pr-12 bg-white rounded-md shadow-md"
             key={option.title}
           >
             <div className="mr-4 text-primary">{option.icon}</div>
             <div>
-              <h4 className="text-2xl text-primary mb-2">{option.title}</h4>
-              <div className=" text-gray-500">{option.description}</div>
+              <h4 className="mb-2 text-2xl text-primary">{option.title}</h4>
+              <div className="leading-5 text-gray-500">
+                {option.description}
+              </div>
             </div>
           </div>
         );
