@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Container from "../components/Container";
 import CurvedText from "../components/CurvedText";
 import Hearts from "../components/Hearts";
-import Image from "next/image";
 import Head from "next/head";
 import { HeartIcon } from "@heroicons/react/solid";
 import Suggestions from "../components/Suggestions";
@@ -21,14 +20,24 @@ const Home = () => {
     <>
       <Head>
         <title>Baby Shower - Noah Reymundo</title>
+        <meta
+          name="description"
+          content="Acompáñanos a celebrar el baby shower de Noah Reymundo (22/01/2022)"
+        />
+        <meta
+          property="og:description"
+          content="Acompáñanos a celebrar el baby shower de Noah Reymundo (22/01/2022)"
+        />
+        <meta property="og:image" content="/social.png" />
+        <meta property="og:title" content="Baby Shower - Noah Reymundo" />
       </Head>
-      <div className="min-h-screen bg-gray-50">
+      <div className=" bg-gray-50 overflow-x-hidden">
         <div className="py-8">
           <Container>
             <CurvedText>BABY SHOWER</CurvedText>
           </Container>
           <Container>
-            <div>
+            <div className="-mt-16 sm:mt-0">
               <img
                 src="/bear.png"
                 alt="babyBear"
@@ -67,24 +76,26 @@ const Home = () => {
                 </div>
 
                 <div className="min-w-[5rem] sm:min-w-[8rem]">
-                  <h2 className="text-4xl sm:text-6xl text-quaternary ">15</h2>
+                  <h2 className="text-4xl sm:text-6xl text-quaternary ">22</h2>
                   <span>5.30 PM</span>
                 </div>
               </div>
 
-              <div className="py-2 text-gray-500 font-body">
+              <div className="py-2 text-gray-500 font-body text-sm">
                 <p>JR PEDRO CONDE 178 - LINCE</p>
+
+                <p className="font-bold">*Confirmar asistencia*</p>
               </div>
             </div>
           </Container>
         </div>
       </div>
-      <div className="min-h-screen bg-blue-50">
+      <div className=" bg-blue-50">
         <div className="py-8">
           <Container>
             <p className="max-w-sm mx-auto mb-8 text-xl text-center text-gray-600 font-body">
-              Tu presencia y cariño será el mejor regalo para Noah, en caso
-              desees darle un presente, puedes hacerlo de las siguientes
+              Tu presencia y cariño será el mejor regalo para Noah; sin embargo,
+              si deseas darle un presente, puedes hacerlo de las siguientes
               maneras:
             </p>
             <Suggestions />
