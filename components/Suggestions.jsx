@@ -10,6 +10,10 @@ const options = [
       <>
         <ul className="space-y-2 list-disc">
           <li>
+            Copia nuestro código de lista de bebé:{" "}
+            <span className="italic font-bold">BIS4678842001</span>
+          </li>
+          <li>
             Entra a{" "}
             <a
               href="http://www.listabebes.comexa.com.pe/publico/"
@@ -17,11 +21,7 @@ const options = [
               rel="noreferrer"
             >
               http://www.listabebes.comexa.com.pe/publico/
-            </a>
-          </li>
-          <li>
-            Ingresa nuestro código de lista de bebé:{" "}
-            <span className="italic font-bold">BIS4678842001</span>
+            </a> y pega el código antes copiado
           </li>
           <li>
             Encontrarás la lista de sugerencias que hemos creado, escoge el
@@ -41,6 +41,12 @@ const options = [
             </span>
             , dale <span className="italic font-bold">Si</span> e ingresa
             nuestro código de lista de bebé.
+          </li>
+          <li>
+            Si gustas enviarlo directamente a nuestro domicilio, uso estos datos: (hay una opción que dice: Enviar a otra dirección)
+            <p><span className="font-bold">Nombres:</span> Ericka Castillo</p>
+            <p><span className="font-bold">Dirección:</span> Jr Pedro Conde 178, departamento 1401, Lince, Lima (Visítanos cuando puedas! 🤗)</p>
+            <p><span className="font-bold">DNI:</span> 46788420</p>
           </li>
           <li>
             Si aún tienes dudas sobre el proceso de compra con código de lista
@@ -68,34 +74,34 @@ const options = [
       </>
     ),
   },
-  {
-    title: "Ahorro de tiempo",
-    icon: <CashIcon className="w-8 h-8" />,
-    description: (
-      <>
-        Si prefieres delegarnos la responsabilidad de elegir el presente, te
-        ayudamos con unos números de cuenta (titular: Paúl Díaz):{" "}
-        <div className="my-2">
-          BCP:{" "}
-          <p>
-            19333679668064 <CopyToClipboard text="19333679668064" />
-          </p>{" "}
-          <p>
-            00219313367966806410 <CopyToClipboard text="00219313367966806410" />
-          </p>
-        </div>
-        <div>
-          Interbank:{" "}
-          <p>
-            8213212252440 <CopyToClipboard text="8213212252440" />
-          </p>{" "}
-          <p>
-            00382101321225244069 <CopyToClipboard text="00382101321225244069" />
-          </p>
-        </div>
-      </>
-    ),
-  },
+  // {
+  //   title: "Ahorro de tiempo",
+  //   icon: <CashIcon className="w-8 h-8" />,
+  //   description: (
+  //     <>
+  //       Si prefieres delegarnos la responsabilidad de elegir el presente, te
+  //       ayudamos con unos números de cuenta (titular: Paúl Díaz):{" "}
+  //       <div className="my-2">
+  //         BCP:{" "}
+  //         <p>
+  //           19333679668064 <CopyToClipboard text="19333679668064" />
+  //         </p>{" "}
+  //         <p>
+  //           00219313367966806410 <CopyToClipboard text="00219313367966806410" />
+  //         </p>
+  //       </div>
+  //       <div>
+  //         Interbank:{" "}
+  //         <p>
+  //           8213212252440 <CopyToClipboard text="8213212252440" />
+  //         </p>{" "}
+  //         <p>
+  //           00382101321225244069 <CopyToClipboard text="00382101321225244069" />
+  //         </p>
+  //       </div>
+  //     </>
+  //   ),
+  // },
   {
     title: "Recuerda",
     icon: <HeartIcon className="w-8 h-8" />,

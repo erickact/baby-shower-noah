@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useRouter } from "next/router";
 import Container from "../components/Container";
 import CurvedText from "../components/CurvedText";
 import Hearts from "../components/Hearts";
@@ -16,6 +17,7 @@ const Home = () => {
       "mouse-event-element": document.body,
     });
   }, []);
+
   return (
     <>
       <Head>
@@ -31,7 +33,7 @@ const Home = () => {
         <meta property="og:image" content="/social.png" />
         <meta property="og:title" content="Baby Shower - Noah Reymundo" />
       </Head>
-      <div className=" bg-gray-50 overflow-x-hidden">
+      <div className="overflow-x-hidden bg-gray-50">
         <div className="py-8">
           <Container>
             <CurvedText>BABY SHOWER</CurvedText>
@@ -76,14 +78,27 @@ const Home = () => {
                 </div>
 
                 <div className="min-w-[5rem] sm:min-w-[8rem]">
-                  <h2 className="text-4xl sm:text-6xl text-quaternary ">22</h2>
-                  <span>5.30 PM</span>
+                  <h2 className="text-4xl sm:text-6xl text-quaternary ">29</h2>
+                  <span>6.00 PM</span>
                 </div>
               </div>
 
-              <div className="py-2 text-gray-500 font-body text-sm">
-                <p>JR PEDRO CONDE 178 - LINCE</p>
-
+              <div className="py-2 text-sm text-gray-500 font-body">
+                <p>Mz A Lt 19, Ramos Larrea, Imperial, Cañete</p>
+                <p>
+                  Referencia: a una cuadra del Mercado Virgen del Carmen de
+                  Ramos Larrea
+                </p>
+                <p>
+                  Aquí puedes encontrar el lugar en un mapa 👉{" "}
+                  <a
+                    href="https://www.google.com/maps/place/13%C2%B003'24.4%22S+76%C2%B021'18.1%22W/@-13.056763,-76.3555842,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0xf4f206194ac1eef4!7e2!8m2!3d-13.0567632!4d-76.3550374"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Google Maps
+                  </a>
+                </p>
                 <p className="font-bold">*Confirmar asistencia*</p>
               </div>
             </div>
