@@ -24,11 +24,11 @@ const Home = () => {
         <title>Baby Shower - Noah Reymundo</title>
         <meta
           name="description"
-          content="Acompáñanos a celebrar el baby shower de Noah Reymundo (22/01/2022)"
+          content="Acompáñanos a celebrar el baby shower de Noah Reymundo (29/01/2022)"
         />
         <meta
           property="og:description"
-          content="Acompáñanos a celebrar el baby shower de Noah Reymundo (22/01/2022)"
+          content="Acompáñanos a celebrar el baby shower de Noah Reymundo (29/01/2022)"
         />
         <meta property="og:image" content="/social.png" />
         <meta property="og:title" content="Baby Shower - Noah Reymundo" />
