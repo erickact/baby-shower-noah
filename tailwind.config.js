@@ -18,6 +18,8 @@ module.exports = {
         brown: "#C2A294",
 
         "ui-1-year-bg": "#DBDBDB",
+        "ui-1-year-skyblue": "#46BDC9",
+        "ui-1-year-green": "#80B69C",
       },
     },
   },
