@@ -16,6 +16,8 @@ module.exports = {
         tertiary: "#F1EEFA",
         quaternary: "#9FD192",
         brown: "#C2A294",
+
+        "ui-1-year-bg": "#DBDBDB",
       },
     },
   },
