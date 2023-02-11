@@ -19,6 +19,7 @@ module.exports = {
 
         "ui-1-year-bg": "#DBDBDB",
         "ui-1-year-skyblue": "#46BDC9",
+        "ui-1-year-blue": "#5FAAC2",
         "ui-1-year-green": "#80B69C",
       },
     },

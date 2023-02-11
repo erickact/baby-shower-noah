@@ -3,6 +3,9 @@ import Head from "next/head";
 import Image from "next/image";
 
 const Home = () => {
+  // random number between 1 and 3
+  const randomNumber = Math.floor(Math.random() * 3 + 1);
+
   return (
     <>
       <Head>
@@ -21,9 +24,9 @@ const Home = () => {
 
       <div className="flex items-center justify-center w-screen min-h-screen bg-ui-1-year-bg">
         {/* Card */}
-        <div className="shadow-lg -rotate-2 rounded-sm w-[70vw] h-[95vh] lg:h-[80vh] border-8 border-white flex flex-col-reverse lg:flex-row">
+        <div className="shadow-lg -rotate-2 rounded-sm w-[70vw] h-[50vh] md:h-[95vh] lg:h-[80vh] border-8 border-white flex flex-col-reverse lg:flex-row">
           {/* Box 1 */}
-          <div className="flex-1 h-full bg-[#F9F8FC] relative overflow-hidden">
+          <div className="hidden md:block flex-1 h-full bg-[#F9F8FC] relative overflow-hidden">
             <div className="absolute bottom-0 -left-24 w-[520px] h-[520px]">
               <Image
                 alt="baby dino 1"
@@ -46,6 +49,25 @@ const Home = () => {
                 layout="fill"
                 src="/assets/1-year-old/patas.png"
               />
+            </div>
+
+            <div className="absolute left-40 top-16 -rotate-[2deg] text-6xl font-body flex space-x-0.5 font-semibold">
+              <p className="text-ui-1-year-green">R</p>
+              <p className="text-ui-1-year-skyblue">A</p>
+              <p className="text-ui-1-year-blue">W</p>
+              <p className="text-ui-1-year-green">R</p>
+              <p className="text-ui-1-year-skyblue">!</p>
+            </div>
+
+            <div className="absolute left-24 top-52 -rotate-[15deg]">
+              <h1 className="font-mono text-ui-1-year-skyblue text-6xl leading-[3rem]">
+                Noah <br />
+                Reymundo
+              </h1>
+            </div>
+
+            <div className="absolute left-[120px] top-[340px] -rotate-[20deg] font-sans">
+              <p className="text-4xl text-white">Cumple 1 año</p>
             </div>
 
             <div className="absolute bottom-[70px] right-6 text-center font-body space-y-2 font-bold">
@@ -169,7 +191,8 @@ const Home = () => {
               <Image
                 alt="Noah"
                 layout="fill"
-                src="/assets/1-year-old/noah.jpg"
+                className="object-cover"
+                src={`/assets/1-year-old/noah-${randomNumber}.jpg`}
               />
             </div>
           </div>
