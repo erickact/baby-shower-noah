@@ -12,11 +12,11 @@ const Home = () => {
         <title>Primer Cumpleaños - Noah Reymundo</title>
         <meta
           name="description"
-          content="Acompáñanos a celebrar el Primer Cumpleaños de Noah Reymundo (29/01/2022)"
+          content="Acompáñanos a celebrar el Primer Cumpleaños de Noah Reymundo (04/MAR/2023) / Jr Pedro Conde 178 / Sala SUM / 2pm"
         />
         <meta
           property="og:description"
-          content="Acompáñanos a celebrar el Primer Cumpleaños de Noah Reymundo (29/01/2022)"
+          content="Acompáñanos a celebrar el Primer Cumpleaños de Noah Reymundo (04/MAR/2023) / Jr Pedro Conde 178 / Sala SUM / 2pm"
         />
         <meta property="og:image" content="/social.png" />
         <meta property="og:title" content="Primer Cumpleaños - Noah Reymundo" />
