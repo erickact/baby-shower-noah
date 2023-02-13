@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Licorice&family=Lora:wght@400;700&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Licorice&family=Lora:wght@400;700&family=Roboto+Condensed:wght@400;600&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 a {
-  @apply text-brown underline break-all;
+  @apply underline break-all text-brown;
 }
